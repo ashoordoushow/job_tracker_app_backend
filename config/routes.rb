@@ -3,8 +3,11 @@ Rails.application.routes.draw do
     member do
       post :generate_cover_letter
     end
+
+    collection do
+      post :generate_cover_letter_from_data
+    end
   end
 
-  # Health check
   get "up" => "rails/health#show", as: :rails_health_check
 end
