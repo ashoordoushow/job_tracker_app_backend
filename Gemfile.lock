@@ -336,7 +336,7 @@ GEM
       logger
     rubyzip (3.2.2)
     securerandom (0.4.1)
-    selenium-webdriver (4.41.0)
+    selenium-webdriver (4.43.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
@@ -415,7 +415,7 @@ DEPENDENCIES
   bundler-audit
   capybara
   debug
-  dotenv-rails (~> 3.2)
+  dotenv-rails
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
