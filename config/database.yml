@@ -12,4 +12,11 @@ test:
   database: job_tracker_app_backend_test
 
 production:
-  url: <%= ENV["DATABASE_URL"] %>
+  primary: &primary_production
+    url: <%= ENV["DATABASE_URL"] %>
+  cable:
+    <<: *primary_production
+  queue:
+    <<: *primary_production
+  cache:
+    <<: *primary_production
